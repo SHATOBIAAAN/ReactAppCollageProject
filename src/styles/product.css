@@ -1,0 +1,189 @@
+.product-card {
+    width: 316px;
+    height: 422px;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+  
+  .discount-tag {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #339933;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 20px;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  
+
+  
+  .product-title {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #282828;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: -150px;
+
+  }
+  
+  .product-pricing {
+    margin-top: 8px;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  gap: 8px;
+  padding-left: 32px; 
+  }
+  
+  .current-price {
+    font-size: 40px;
+    font-weight: 600;
+    color: #282828;
+  }
+  
+  .old-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: #8b8b8b;
+    text-decoration: line-through;
+  }
+
+.discount-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #339933 0%, #0B710B 60%);
+    height: 486px;
+    width: 100%;
+    max-width: 1360px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 20px;
+    margin-bottom: 80px;
+  }
+  
+  .discount-image img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin-top: 150px;
+  }
+  
+  .discount-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .discount-title {
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+    margin-top: -70px;
+  }
+  
+  .discount-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 516px;
+    margin-left: 820px;
+    margin-top: 40px;
+  }
+  
+  .discount-input {
+    height: 32px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 8px 32px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .discount-input::placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+  
+  .discount-button {
+    height: 48px;
+    background-color: #ffffff;
+    color: #333333;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  .discount-button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .discount-button.submitted {
+    background-color: transparent;
+    color: #28a745;
+    cursor: default;
+    box-shadow: none;
+    border: 1px solid transparent;
+    text-align: center;
+  } 
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  .product-card:hover .product-card-overlay {
+    opacity: 1;
+  }
